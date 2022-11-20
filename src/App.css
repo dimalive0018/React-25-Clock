@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #41b3a3;
+    font-family: 'Bangers';
+}
+
+.App {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30vh;
+    text-align: center;
+    align-items: flex-end;
+}
+
+#timer-label {
+    margin-top: 3vh;
+    font-size: xxx-large;
+}
+
+#session-label, #break-label {
+    margin-top: 2.5vh;
+    font-size: xx-large;
+}
+
+#time-left {
+    margin-top: 5vh;
+    font-family: cursive;
+    font-size: xx-large;
+}
+
+#session-length, #break-length {
+    margin-top: 4vh;
+    font-family: cursive;
+    font-size: large;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#start_stop, #reset {
+    margin-top: 7vh;
+    height: 6vh;
+    width: 6vh;
+    border: solid 1px green;
+}
+
+#session-decrement, #session-increment,
+#break-decrement, #break-increment {
+    margin-top: 4vh;
+    height: 4vh;
+    width: 4vh;
+}
+
+#session-decrement, #break-decrement {
+    border: solid 1px red;
+}
+
+#session-increment, #break-increment {
+    border: solid 1px blue;
+}
+
+button {
+    cursor: pointer;
+    background-color: white;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+button:hover {
+    opacity: 0.9;
+    color: black;
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.5);
+}
